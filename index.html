@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Салон красоты Expert Beauty</title>
+  <meta name="description" content="Салон красоты Коммунарка, окрашивание волос в Коммунарке, стрижка волос в Коммунарка, перманентный макияж в Коммунарке ">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
+  <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container header__container">
+    <div class="header__inner">
+      <p class="header__logo">Expert Beauty </p>
+      <nav class="nav" title="">
+        <ul class="list-reset header__list">
+          <li class="header__item">
+            <a href="#" class="header__link"  data-graph-path="popup">Прайс</a>
+          </li>
+          <li class="header__item">
+            <a href="#about" class="header__link">Обо мне</a>
+          </li>
+          <li class="header__item">
+            <a href="#contacts" class="header__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__adress-box">
+        <div class="header__adress">
+          <svg class="header__location">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
+         <p class="header__text">Москва, метро Профсоюзная, улю Профсоюзная 77</p>
+        </div>
+        <div class="header__social-box">
+          <a class="header__phone" href="#">+7(777)-777-77-77</a>
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link social__link--fb" aria-label="Наша страничка в ватсап">
+                <svg class="social__icon social__item-whatsapp">
+                  <use xlink:href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link social__link--tw" aria-label="Наша страничка в Телеграм">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main class="main">
+      <div class="graph-modal">
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="popup">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
+    <div class="graph-modal__content popup">
+      <h2 class="price__title">Прайс</h2>
+      <div class="price__container">
+        <p class="price__text">Стрижки женские / Прически</p>
+        <p class="price__descr"> Женская стрижка (короткая) — <span>2.200₽</span></p>
+        <p class="price__descr"> Женская стрижка (средняя) — <span>2.500₽</span></p>
+        <p class="price__descr"> Женская стрижка (длинные) — <span>2.800/3.200₽</span></p>
+        <p class="price__descr"> Прическа вечерняя — <span>4000/5500₽</span></p>
+        <p class="price__text">Стрижки мужские</p>
+        <p class="price__descr"> Мужская стрижка (средняя) длина — <span>1.500₽</span></p>
+        <p class="price__descr"> Мужская стрижка (длинные) — <span>2.000₽</span></p>
+        <p class="price__descr"> Камуфляж седины — <span>1.700₽-2.500₽</span></p>
+
+        <p class="price__text">детские стрижки</p>
+        <p class="price__descr">Детская стрижка для девочки до 10 лет — <span>1.500₽</span></p>
+        <p class="price__descr">Детская прическа. Укладка — <span>1.500₽/2500₽</span></p>
+        <p class="price__descr">Детская стрижка до 10 лет для мальчика — <span>1.300₽</span></p>
+
+        <p class="price__text">Окрашивание различной сложности</p>
+        <p class="price__about">Окрашивание один тон (перманентный краситель L’Oréal Majirel, тонирование DiaRichesse, DiaLigp)</p>
+        <p class="price__descr">Короткая (корни)- <span>4.500₽</span></p>
+        <p class="price__descr">Средняя — <span>5.500₽</span></p>
+        <p class="price__descr">Длинные — <span>6.500/7500₽</span></p>
+        <p class="price__about">Один Тон Cotril (итальянский краситель аммиачный и без аммиака)</p>
+        <p class="price__descr">Короткая (корни) — <span>3.800₽</span></p>
+        <p class="price__descr">Средняя — <span>4.200₽</span></p>
+        <p class="price__descr">Длинные — <span>5.500/6500₽</span></p>
+        <p class="price__about">Мелирование (+добавочная стоимость — ложка порошка L’Oréal, Kedra) 800₽</p>
+        <p class="price__descr">Короткая- <span>3.000₽</span></p>
+        <p class="price__descr">Средняя — <span>3.800₽</span></p>
+        <p class="price__descr">Длинные — <span> 4.400/5.500₽</span></p>
+        <p class="price__about">Частичное окрашивание, нюанс (цветовой акцент светлых и ярких прядей)</p>
+        <p class="price__descr">Осветление одной пряди — <span>600-800-1.200₽</span></p>
+        <p class="price__descr">Окрашивание одной пряди — <span>600-800-1.200₽</span></p>
+        <p class="price__about">Осветление (+добавочная стоимость ложка порошка 800₽ L’Oréal, Kedra)</p>
+        <p class="price__descr">Короткая (корни) — <span>2.800₽</span></p>
+        <p class="price__descr">Средняя — <span>3.800₽</span></p>
+        <p class="price__descr">Длинные — <span>4.800/5.800₽</span></p>
+        <p class="price__about">Декапирования удаление нежелательного пигмента перед последующим окрашиванием</p>
+        <p class="price__descr">Короткая- <span>3.000₽</span></p>
+        <p class="price__descr">Средняя — <span>3.500₽</span></p>
+        <p class="price__descr">Длинные — <span>4.500/5.500₽</span></p>
+        <p class="price__about">Сложное авторское окрашивания (ШАТУШ/ ОМБРЕ//БАЛАЯЖ//ЭЙРТАЧ рельефные окрашивания с применением нескольких красителей и осветляющей пудры, пудра включена в стоимость)</p>
+        <p class="price__descr">Средняя — <span>12.500₽</span></p>
+        <p class="price__descr">Длинные — <span>16.500₽</span></p>
+        <p class="price__about">Укладка в день окрашивания (обязательная услуга после любого окрашивания)</p>
+        <p class="price__descr">Короткая — <span>1.200₽</span></p>
+        <p class="price__descr">Средняя — <span>1.500₽</span></p>
+        <p class="price__descr">Длинные — <span>1.500/1.800₽</span></p>
+
+        <p class="price__text">Кератин</p>
+        <p class="price__descr">Кератин (выпрямление кудрявых волос на 6-9 месяцев)+</p>
+        <p class="price__descr">Короткая — <span>7.000₽</span></p>
+        <p class="price__descr">Средняя — <span>10.000₽</span></p>
+        <p class="price__descr">Длинные — <span>12.000/14.000₽</span></p>
+        <p class="price__descr">Очень (длинные) — <span>16.000₽</span></p>
+
+        <p class="price__text">Перманентный макияж</p>
+        <p class="price__descr">Брови, губы, межресничка — <span>7.500₽</span></p>
+        <p class="price__descr">Коррекция, любая зона (30-40 дней после основной процедуры) — <span>5.000₽</span></p>
+        <p class="price__descr">Оформление бровей+ окрашивание (краска или хна) — <span>1.600₽</span></p>
+        <p class="price__descr">Окрашивания ресниц — <span>700₽</span></p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <section class="hero" id="hero">
+  <div class="container hero__container">
+    <div class="hero__inner">
+      <div class="hero__left">
+        <ul class="accordion__list list-reset">
+            <li class="accordion">
+              <div class="accordion__box">
+                <div class="accordion__title-box">
+                  <p class="accordion__title">Мужские и женские стрижки</p>
+                </div>
+                <div class="accordion__icon-box">
+                <svg class="accordion__icon">
+                  <use xlink:href="img/sprite.svg#sloze"></use>
+                </svg>
+                </div>
+              </div>
+              <button class="accordion__control btn-reset" aria-expanded="false"></button>
+              <div class="accordion__content" aria-hidden="true">
+                <div class="accordion__inner">
+
+                  <p class="accordion__descr"> Женская стрижка короткая — <span>2.200₽</span></p>
+                  <p class="accordion__descr"> Женская стрижка средняя — <span>2.500₽</span></p>
+                  <p class="accordion__descr"> Женская стрижка длинные — <span>2.800₽-3.200₽</span></p>
+                  <p class="accordion__descr"> Мужская стрижка средняя длина- <span>1.500₽</span></p>
+                  <p class="accordion__descr"> Мужская стрижка (длинные) — <span>2.000₽</span></p>
+                  <p class="accordion__descr"> Камуфляж седины — <span>1.700₽-2.500₽</span></p>
+                  <p class="accordion__descr"> Стрижка наголо — <span>800₽</span></p>
+                    <a href="#" target="_blank" class="accordion__link">Записаться</a>
+                </div>
+              </div>
+            </li>
+            <li class="accordion">
+              <div class="accordion__box">
+                <div class="accordion__title-box">
+                  <p class="accordion__title">Детские стрижки</p>
+                </div>
+                <div class="accordion__icon-box">
+                <svg class="accordion__icon">
+                  <use xlink:href="img/sprite.svg#sloze"></use>
+                </svg>
+                </div>
+              </div>
+              <button class="accordion__control btn-reset" aria-expanded="false"></button>
+              <div class="accordion__content" aria-hidden="true">
+                <div class="accordion__inner">
+                  <p class="accordion__descr">Детская стрижка для девочки до 10 лет — <span>1.500₽</span></p>
+                  <p class="accordion__descr">Детская прическа. Укладка — <span>1.500₽/2500₽</span></p>
+                  <p class="accordion__descr">Детская стрижка до 10 лет для мальчика — <span>1.300₽</span></p>
+                  <p class="accordion__descr"> Детская стрижка до 5 лет — <span>1.200₽</span></p>
+                    <a href="#" target="_blank" class="accordion__link">Записаться</a>
+                </div>
+              </div>
+            </li>
+            <li class="accordion">
+              <div class="accordion__box">
+                <div class="accordion__title-box">
+                  <p class="accordion__title">Укладки</p>
+                </div>
+                <div class="accordion__icon-box">
+                <svg class="accordion__icon">
+                  <use xlink:href="img/sprite.svg#sloze"></use>
+                </svg>
+                </div>
+              </div>
+              <button class="accordion__control btn-reset" aria-expanded="false"></button>
+              <div class="accordion__content" aria-hidden="true">
+                <div class="accordion__inner">
+                  <p class="accordion__descr"> Укладка повседневная короткая — <span>1.500₽</span></p>
+                  <p class="accordion__descr"> Укладка повседневная средняя — <span>1.800₽</span></p>
+                  <p class="accordion__descr"> Укладка повседневная длинная — <span>2100₽-2500₽</span></p>
+                  <p class="accordion__descr"> Укладка для особого случая (щипцы, браш, плойка) </p>
+                  <p class="accordion__descr"> короткая — <span>1.800₽</span></p>
+                  <p class="accordion__descr">средняя — <span>2.200-2.500₽</span></p>
+                  <p class="accordion__descr"> длинная — <span>2.700-3500₽</span></p>
+                    <a href="#" target="_blank" class="accordion__link">Записаться</a>
+                </div>
+              </div>
+            </li>
+            <li class="accordion">
+              <div class="accordion__box">
+                <div class="accordion__title-box">
+                  <p class="accordion__title">Прически</p>
+                </div>
+                <div class="accordion__icon-box">
+                <svg class="accordion__icon">
+                  <use xlink:href="img/sprite.svg#sloze"></use>
+                </svg>
+                </div>
+              </div>
+              <button class="accordion__control btn-reset" aria-expanded="false"></button>
+              <div class="accordion__content" aria-hidden="true">
+                <div class="accordion__inner">
+                  <p class="accordion__descr"> Прическа вечерняя — <span>4000/5500₽</span></p>
+                    <a href="#" target="_blank" class="accordion__link">Записаться</a>
+                </div>
+              </div>
+            </li>
+            <li class="accordion">
+              <div class="accordion__box">
+                <div class="accordion__title-box">
+                  <p class="accordion__title">Окрашивание различной сложности</p>
+                </div>
+                <div class="accordion__icon-box">
+                <svg class="accordion__icon">
+                  <use xlink:href="img/sprite.svg#sloze"></use>
+                </svg>
+                </div>
+              </div>
+              <button class="accordion__control btn-reset" aria-expanded="false"></button>
+              <div class="accordion__content" aria-hidden="true">
+                <div class="accordion__inner">
+                  <p class="accordion__about">Окрашивание один тон (перманентный краситель L’Oréal Majirel, тонирование DiaRichesse, DiaLight)</p>
+                  <p class="accordion__descr">Короткая (корни)- <span>4.500₽</span></p>
+                  <p class="accordion__descr">Средняя — <span>5.500₽</span></p>
+                  <p class="accordion__descr">Длинная — <span>6.500/7500₽</span></p>
+                  <p class="accordion__about">Окрашивание один тон Cotril (итальянский краситель аммиачный и без аммиака)</p>
+                  <p class="accordion__descr">Короткая (корни) — <span>3.800₽</span></p>
+                  <p class="accordion__descr">Средняя — <span>4.200₽</span></p>
+                  <p class="accordion__descr">Длинная — <span>5.500/6500₽</span></p>
+                  <p class="accordion__about">Мелирование (+добавочная стоимость — ложка порошка L’Oréal, Kedra 800₽)</p>
+                  <p class="accordion__descr">Короткая- <span>3.000₽</span></p>
+                  <p class="accordion__descr">Средняя — <span>3.800₽</span></p>
+                  <p class="accordion__descr">Длинная — <span>4.400/5.500₽</span></p>
+                  <p class="accordion__about">Осветление (+добавочная стоимость — ложка порошка L’Oréal, Kedra 800₽)</p>
+                  <p class="accordion__descr">Короткая (корни) — <span>2.800₽</span></p>
+                  <p class="accordion__descr">Средняя — <span>3.800₽</span></p>
+                  <p class="accordion__descr">Длинная — <span>4.800/5.800₽</span></p>
+                  <p class="accordion__about">Декапирование (удаление нежелательного пигмента перед последующим окрашиванием)</p>
+                  <p class="accordion__descr">Короткая- <span>3.000₽</span></p>
+                  <p class="accordion__descr">Средняя — <span>3.500₽</span></p>
+                  <p class="accordion__descr">Длинная — <span>4.500/5.500₽</span></p>
+                  <p class="accordion__about">Сложное авторское окрашивание (ШАТУШ// ОМБРЕ//БАЛАЯЖ//ЭЙРТАЧ — рельефные окрашивания с применением нескольких красителей и осветляющей пудры, пудра включена в стоимость)</p>
+                  <p class="accordion__descr">Средняя — <span>12.500₽</span></p>
+                  <p class="accordion__descr">Длинная — <span>16.500₽</span></p>
+                  <p class="accordion__about">Укладка в день окрашивания (обязательная услуга после любого окрашивания)</p>
+                  <p class="accordion__descr">Короткая — <span>1.200₽</span></p>
+                  <p class="accordion__descr">Средняя — <span>1.500₽</span></p>
+                  <p class="accordion__descr">Длинная — <span>1.500/1.800₽</span></p>
+                  <p class="accordion__about"> Частичное окрашивание, нюанс (цветовой акцент светлых и ярких прядей)</p>
+                  <p class="accordion__descr">Осветление одной пряди — <span>600-800-1.200₽</span></p>
+                  <p class="accordion__descr">Окрашивание одной пряди — <span>600-800-1.200₽</span></p>
+                    <div class="accordion__btns-box">
+                      <a href="#" target="_blank" class="accordion__link">Записаться</a>
+                    </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="accordion">
+              <div class="accordion__box">
+                <div class="accordion__title-box">
+                  <p class="accordion__title">Перманентный макияж</p>
+                </div>
+                <div class="accordion__icon-box">
+                <svg class="accordion__icon">
+                  <use xlink:href="img/sprite.svg#sloze"></use>
+                </svg>
+                </div>
+              </div>
+              <button class="accordion__control btn-reset" aria-expanded="false"></button>
+              <div class="accordion__content" aria-hidden="true">
+                <div class="accordion__inner">
+                  <p class="accordion__descr">Брови, губы, межресничка — <span>7.500₽</span></p>
+                  <p class="accordion__descr">Коррекция, любая зона (30-40 дней после основной процедуры) — <span>5.000₽</span></p>
+                  <p class="accordion__descr">Оформление бровей + окрашивание (краска или хна) — <span>1.600₽</span></p>
+                  <p class="accordion__descr">Окрашивание ресниц — <span>700₽</span></p>
+                  <a href="#" target="_blank" class="accordion__link">Записаться</a>
+
+                </div>
+              </div>
+            </li>
+        </ul>
+        <a class="hero__btn" href="#">Связаться</a>
+      </div>
+      <div class="hero__right">
+        <p class="hero__name">Светлана Анашкина</p>
+        <p class="hero__text">Рада приветствовать Вас на странице своего сайта.</p>
+        <h1 class="hero__title">Я парикмахер-стилист</h1>
+        <p class="hero__subtitle"> и художник-колорист с большим стажем. </p>
+        <p class="hero__descr">Более 20 лет своей жизни я посвятила этому ремеслу.</p>
+        <img class="hero__img" src="img/svetlana-anashkina.png" alt="Светлана анашкина">
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="coloring">
+  <div class="container coloring__container">
+    <div class="coloring__inner">
+      <h2 class="coloring__title">Хотите изменить стиль и добавить яркости в привычный образ?</h2>
+      <p class="coloring__subtitle"> Или просто хотите освежить тон волос?</p>
+
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="swiper-img-box" style="background-image: url('../img/slide-1.jpg');"></div>
+            <p class="swiper-text"> <span>Брондирование -</span> Брондирование — это определенный способ окрашивания, который позволяет брюнеткам, блондинкам или девушкам с темно-русыми волосами подчеркнуть природную красоту волос, так сказать, добавить «изюминку» в свой образ, но при этом не менять цвет радикально. Теменная зона волос остается природного оттенка. А светлые блики добавляются на внутренние волосы.
+
+           </div>
+          <div class="swiper-slide">
+            <div class="swiper-img-box" style="background-image: url('../img/slide-2.jpg');"></div>
+            <p class="swiper-text"> <span>Колорирование -</span> это такой же способ окрашивания, как и мелирование, но в данном случае мастер не использует осветляющий состав (порошок, пудру, пасту), а сразу прибегает к красителю. Можно чередовать осветление с несколькими близкими друг к другу оттенками красок — от двух до бесконечности, что позволяет дать волю художественной фантазии</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img-box" style="background-image: url('../img/slide-3.jpg');"></div>
+            <p class="swiper-text"> <span>Омбре -</span> самый простой способ быстро сменить образ и подчеркнуть индивидуальность. Помимо широкой палитры оттенков, современная колористика предлагает самые разнообразные виды окрашивания, причем год от года техники и схемы становятся все сложнее, а эффекты — ярче и интереснее. И все это с минимальным риском навредить волосам.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img-box" style="background-image: url('../img/img(39).jpg');"></div>
+            <p class="swiper-text"> <span>Шатуш -</span> «Шатуш» в переводе с французского означает «прикосновение», так как создает легкий и очень естественный эффект «поцелованных солнцем» прядей. Отличительная особенность стиля шатуш заключается в том, что перед окрашиванием парикмахер-стилист делает начес прядей. За основу берется тон, близкий к натуральному, для придания теплого или холодного выразительного акцента. Разница между основным оттенком и бликом всегда не выше трех ступеней. Большой плюс техники в отсутствии заметного перехода при отращивании</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="swiper-img-box" style="background-image: url('../img/hair.jpg');"></div>
+            <p class="swiper-text"> <span>Выход из черного -</span> цвета волос относится к сложным техникам. На эту процедуру уходит не менее 6 часов. Выполняют ее с помощью кислотных и щелочных смывок, декапирования. Современные методы и продукты позволяют смыть черный цвет волос и сохранить их качество.</p>
+          </div>
+
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <ul class="coloring__list list-reset">
+        <li class="coloring__item">
+          <img class="coloring__img" src="img/color-1.png" alt="профессиональное оборудование">
+          <p class="coloring__descr">Профессиональное оборудование</p>
+        </li>
+        <li class="coloring__item">
+          <img class="coloring__img" src="img/color-2.png" alt="профессиональное оборудование">
+          <p class="coloring__descr">Работаю на профессиональных красках L’Oréal professional, Cotril (Италия)</p>
+        </li>
+        <li class="coloring__item">
+          <img class="coloring__img" src="img/color-3.png" alt="профессиональное оборудование">
+          <p class="coloring__descr">Высокий сервис, клиентоориентированность</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="service">
+  <div class="container service__container">
+    <div class="service__title-box">
+      <img src='../img/scissors.png' alt="декорация расческа и ножницы" class="service__icon">
+      <h2 class="service__title">Мои работы</h2>
+    </div>
+
+    <p class="service__subtitle">Ни для кого не секрет, что новая стрижка может кардинально преобразить человека.</p>
+    <div class="service__inner">
+      <div class="slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(1).jpg" alt="Фото работ">
+            </div>
+           </div>
+          <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(2).jpg" alt="Фото работ">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(4).jpg" alt="Фото работ">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(5).jpg" alt="Фото работ">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(21).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(22).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(23).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(24).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(25).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(26).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" src="img/img(27).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(28).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(29).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(30).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(31).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(32).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(33).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(34).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(35).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(36).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(37).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(38).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(39).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(40).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(41).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(42).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(43).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(44).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(45).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(46).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(47).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(48).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(49).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(50).jpg" alt="Фото работ">
+            </div>
+           </div>
+           <div class="swiper-slide">
+            <div class="slider-img-box">
+              <img class="slider-img" loading="lazy" src="img/img(51).jpg" alt="Фото работ">
+            </div>
+           </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="button-prev"></div>
+        <div class="button-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="about" id="about">
+  <div class="container about__container">
+    <h2 class="about__title">Обо мне</h2>
+
+    <div class="about__counter">
+      <div class="about__count-box">
+          <p class="about__counter-value" data-count="20">0</p><span class="about__count-text">Лет опыта</span>
+        </div>
+      <div class="about__count-box">
+         <p class="about__counter-value" data-count="50">0</p><span class="about__count-text">Сертификатов, обучений и повышений квалификаций</span>
+        </div>
+      <div class="about__count-box">
+        <p class="about__counter-value" data-count="1000">200</p><span class="about__count-text">Довольных клиентов</span>
+      </div>
+
+  </div>
+    <div class="about__inner">
+      <div class="about__left">
+        <img src="img/IMG_3544.png" alt="Светлана Анашкина" class="about__img">
+      </div>
+      <div class="about__right">
+          <p class="about__name">Светлана Анашкина</p>
+          <p class="about__descr"> <span>Рада приветствовать Вас на странице своего сайта.</span>
+          Я парикмахер-стилист и художник-колорист с большим стажем. Более 20 лет своей жизни я посвятила этому ремеслу.</p>
+          <p class="about__descr"> Мужские и женские стрижки, укладки, прически, окрашивание различной сложности, создание образа с нуля — мы с вами найдем понимание и создадим именно ваш стильный образ.</p>
+        <p class="about__descr"> У меня богатый опыт работы в салонах красоты премиального уровня, широкий круг постоянных клиентов, владение новыми технологиями окрашивания, создание идеальных стрижек и безупречных укладок.</p>
+    </div>
+
+    </div>
+  </div>
+</section>
+
+      <section class="contacts" id="contacts">
+  <div class="container contacts__container">
+
+    <h3 class="contacts__title">Контакты</h3>
+    <div class="contacts__inner">
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2255.862298956558!2d37.48889437715548!3d55.56959620608708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aace6e6f24807%3A0xa60e269004a21d01!2z0YPQuy4g0JvQuNC_0L7QstGL0Lkg0J_QsNGA0LosIDUg0LrQvtGA0L_Rg9GBIDEsINCa0L7QvNC80YPQvdCw0YDQutCwLCDQnNC-0YHQutCy0LAsIDE0Mjc3MA!5e0!3m2!1sru!2sru!4v1707227805053!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="contacts__right">
+        <div class="contacts__adress">
+          <svg class="contacts__location">
+          <use xlink:href="img/sprite.svg#location"></use>
+        </svg>
+         <p class="contacts__text">Москва, метро Профсоюзная, улю Профсоюзная 77</p>
+        </div>
+        <div class="contacts__adress-box">
+          <svg class="contacts__location contacts__location-phone">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          <a class="contacts__text" href="#">+7(777)-77-77</a>
+        </div>
+        <div class="contacts__phone-box">
+          <ul class="list-reset social">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link social__link--fb" aria-label="Наша страничка в ватсап">
+                <svg class="contacts__icon social__icon social__item-whatsapp">
+                  <use xlink:href="img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="contacts__text">Свяжитесь со мной</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <a href="#hero">
+      <p class="footer__logo">Expert Beauty </p>
+    </a>
+      <nav class="nav" title="">
+        <ul class="list-reset footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link"  data-graph-path="popup">Прайс</a>
+          </li>
+          <li class="footer__item">
+            <a href="#about" class="footer__link">Обо мне</a>
+          </li>
+          <li class="footer__item">
+            <a href="#contacts" class="footer__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+
+</html>
